@@ -1,19 +1,32 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'Teste',
-      textAlign: TextAlign.center,
-      overflow: TextOverflow.ellipsis,
-      style: TextStyle(fontWeight: FontWeight.bold),
-      textDirection: TextDirection.ltr,
-      textScaleFactor: 1.5,
+    return const MaterialApp(
+      home: HomePageWidget(),
+    );
+  }
+}
+
+class HomePageWidget extends StatelessWidget {
+  const HomePageWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Icon(Icons.car_rental),
+      ),
+      body: const Center(
+        child: Text('Bruno Mota'),
+      ),
     );
   }
 }
