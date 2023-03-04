@@ -1,32 +1,88 @@
+// import 'package:flutter/material.dart';
+
+// void main(List<String> args) {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(
+//       home: HomePageWidget(),
+//     );
+//   }
+// }
+
+// class HomePageWidget extends StatelessWidget {
+//   const HomePageWidget({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Icon(Icons.car_rental),
+//       ),
+//       body: const Center(
+//         child: Text('Bruno Mota'),
+//       ),
+//     );
+//   }
+// }
 import 'package:flutter/material.dart';
 
-void main(List<String> args) {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  static const String _title = 'Flutter Code Sample';
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePageWidget(),
+    return MaterialApp(
+      title: _title,
+      home: Scaffold(
+        appBar: AppBar(title: const Text(_title)),
+        body: const Center(
+          child: MyStatelessWidget(),
+        ),
+      ),
     );
   }
 }
 
-class HomePageWidget extends StatelessWidget {
-  const HomePageWidget({super.key});
+class MyStatelessWidget extends StatelessWidget {
+  const MyStatelessWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Icon(Icons.car_rental),
-      ),
-      body: const Center(
-        child: Text('Bruno Mota'),
-      ),
+    return Stack(
+      alignment: AlignmentDirectional.center,
+      children: <Widget>[
+        SizedBox(
+          width: 200.0,
+          height: 100.0,
+          child: ElevatedButton(
+            onPressed: () {},
+            child: null,
+          ),
+        ),
+        SizedBox(
+          width: 100.0,
+          height: 200.0,
+          child: AbsorbPointer(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue.shade200,
+              ),
+              onPressed: () {},
+              child: null,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
