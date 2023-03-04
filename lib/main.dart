@@ -12,136 +12,54 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePageWidget(),
+      home: AutocompleteExampleApp(),
     );
   }
 }
 
-class HomePageWidget extends StatelessWidget {
-  const HomePageWidget({super.key});
+class AutocompleteExampleApp extends StatelessWidget {
+  const AutocompleteExampleApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Icon(Icons.car_rental),
-      ),
-      body: const Center(
-        child: MyStatelessWidget(),
-      ),
-    );
-  }
-}
-
-class MyStatelessWidget extends StatelessWidget {
-  const MyStatelessWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      alignment: AlignmentDirectional.center,
-      children: <Widget>[
-        SizedBox(
-          width: 200.0,
-          height: 100.0,
-          child: ElevatedButton(
-            onPressed: () {},
-            child: null,
-          ),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Autocomplete Basic'),
         ),
-        SizedBox(
-          width: 100.0,
-          height: 200.0,
-          child: Align(
-            alignment: Alignment(2.0, 1.0),
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red.shade200,
-              ),
-              onPressed: () {},
-              child: null,
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 100.0,
-          height: 200.0,
-          child: AbsorbPointer(
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue.shade200,
-              ),
-              onPressed: () {},
-              child: null,
-            ),
-          ),
-        ),
-        const DialogExample(),
-        MyStatefulWidget(),
-      ],
-    );
-  }
-}
-
-class DialogExample extends StatelessWidget {
-  const DialogExample({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: () => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          title: const Text('AlertDialog Title'),
-          content: const Text('AlertDialog description'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'Cancel'),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
+        body: const Center(
+          child: AutocompleteBasicExample(),
         ),
       ),
-      child: const Text('Show Dialog'),
     );
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({super.key});
+class AutocompleteBasicExample extends StatelessWidget {
+  const AutocompleteBasicExample({super.key});
 
-  @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
-}
-
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  bool selected = false;
+  static const List<String> _kOptions = <String>[
+    'aardvark',
+    'bobcat',
+    'chameleon',
+    'brasil',
+    'bola',
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          selected = !selected;
+    return Autocomplete<String>(
+      optionsBuilder: (TextEditingValue textEditingValue) {
+        if (textEditingValue.text == '') {
+          return const Iterable<String>.empty();
+        }
+        return _kOptions.where((String option) {
+          return option.contains(textEditingValue.text.toLowerCase());
         });
       },
-      child: Center(
-        child: Container(
-          width: 250.0,
-          height: 250.0,
-          color: Colors.red,
-          child: AnimatedAlign(
-            alignment: selected ? Alignment.topRight : Alignment.bottomLeft,
-            duration: const Duration(seconds: 1),
-            curve: Curves.fastOutSlowIn,
-            child: const FlutterLogo(size: 50.0),
-          ),
-        ),
-      ),
+      onSelected: (String selection) {
+        debugPrint('You just selected $selection');
+      },
     );
   }
 }

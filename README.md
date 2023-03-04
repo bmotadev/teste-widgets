@@ -35,9 +35,18 @@ samples, guidance on mobile development, and a full API reference.
 - [x] AnimatedPhysicalModel : anima a borderRadius e a elevation
 - [x] AnimatedPositioned : animação da posição dos child
 - [x] AnimatedSize : tamanho animado
-- [ ] AnimatedWidget :  permite criar a propria animação
-- [ ] AnimatedWidgetBaseState : usado em widget com animações implicitas
-- [ ] AppBar : uma barra de aplicativos na tela usando o Material Design
-- [ ] AspectRatio : dimensiona o child para uma proporção especifica
-- [ ] AssetBundle : recursos usados pelo aplicativo
-- [ ] Autocomplete : um autocomplete, usuario vai digitando e ele vai sugerindo opções
+- [x] AnimatedWidget :  permite criar a propria animação
+- [x] AnimatedWidgetBaseState : usado em widget com animações implicitas
+- [x] AppBar : uma barra de aplicativos na tela usando o Material Design
+- [x] AspectRatio : dimensiona o child para uma proporção especifica
+- [x] AssetBundle : recursos usados pelo aplicativo
+- [x] Autocomplete : um autocomplete, usuario vai digitando e ele vai sugerindo opções
+- [x] BackdropFilter : usado em conjunto com ImageFilter para editar uma imagem
+- [x] Baseline : posiciona o child de acordo com a base
+- [x] BottomNavigationBar : uma barra de menus para navegar no app
+- [x] BottomSheet : um a folha que aparece com informações dentro dela
+- [x] Card : um painel com uma leve formatação
+- [x] Center : centraliza o child
+- [x] Checkbox : caixa de seleção
+- [x] Chip : elemento compactos que aparecem na tela
+- [x] CircularProgressIndicator : mostra o progresso de um carregamento por exemplo.
