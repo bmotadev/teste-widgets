@@ -37,4 +37,7 @@ samples, guidance on mobile development, and a full API reference.
 - [x] AnimatedSize : tamanho animado
 - [ ] AnimatedWidget :  permite criar a propria animação
 - [ ] AnimatedWidgetBaseState : usado em widget com animações implicitas
-- [ ] 
+- [ ] AppBar : uma barra de aplicativos na tela usando o Material Design
+- [ ] AspectRatio : dimensiona o child para uma proporção especifica
+- [ ] AssetBundle : recursos usados pelo aplicativo
+- [ ] Autocomplete : um autocomplete, usuario vai digitando e ele vai sugerindo opções
