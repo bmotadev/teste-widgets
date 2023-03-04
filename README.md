@@ -83,3 +83,22 @@ samples, guidance on mobile development, and a full API reference.
 - [x] CupertinoTabView() : guia unica com proprio estado e historico do navegador
 - [x] CupertinoTextField() : campo de texto estilo iOS
 - [x] CupertinoTimerPicker() : cronometro estilo iOS
+- [ ] CustomMultiChildLayout() : posiciona e dimensiona vários children
+- [ ] CustomPaint() : permitir customizar com desenhos predefinidos
+- [ ] CustomScrollView() : barra de rolagem
+- [ ] CustomSingleChildLayout : ??? revisar, não compreendi
+- [ ] DataTable() : tabela com Material Design (materialapp) pode pro qualquer widget na tabela
+- [ ] showDatePicker() : mostra uma caixa de dialogo com seletor de data do Material Design
+- [ ] DecoratedBox() : pinta o widget(elemento) child(filho) antes ou depois
+- [ ] DecoratedBoxTransition() : decoratebox com animação
+- [ ] DefaultTextStyle() : estilo de texto padrão
+- [ ] Dismissible() : widget que pode ser jogado fora, dependendo pra onde você direciona ele.
+- [ ] Divisor() : uma linha horizontal pra dividir a tela
+- [ ] DragTarget() : ao arrastar um widget, faz um evento acontecer.
+- [ ] Draggable() : trás um retorno(feedback) ao usuario quando arrasta um widget na tela
+- [ ] DraggableScrollableSheet() : permiti que o widget seja rolavel enquanto estiver na tela(scroll)
+- [ ] Drawer() : abre um painel que desliza da borda. Geralmente usado com listTitles
+- [ ] DropdownButton() : um botão que ao clicar exibe uma lista com itens
+- [ ] ElevatedButton() : botão com elevação ao ser pressionado
+- [ ] ExcludeSemantics() : descarta toda a semântica de seus descendentes
+- [ ] Expanded() : faz o widget se expandir para o espaço vazio em volta dele
