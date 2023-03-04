@@ -24,3 +24,15 @@ samples, guidance on mobile development, and a full API reference.
 - [x] AlertDialog() : exibe uma caixa de dialogo
 - [x] Align() : alinha um widget child dentro de si e pode mudar de tamanho de acordo com tamanho do child
 - [x] AnimatedAlign : alinhamento animado dos child
+- [x] AnimatedBuilder : faz animações de forma geral
+- [x] AnimatedContainer : faz animação automatica
+- [x] AnimatedCrossFade : alterna a animação entre dois children. Com efetio de fade.
+- [x] AnimatedDefaultTextStyle : faz animação do estilo do texto
+- [x] AnimatedList : animação na lista ao adicionar ou remover itens.
+- [x] AnimatedListState : estado da animação do AnimatedList
+- [x] AnimatedModalBarrier : impede que o usuário interaja com widgets atrás dele
+- [x] AnimatedOpacity : animação na opacidade
+- [x] AnimatedPhysicalModel : anima a borderRadius e a elevation
+- [x] AnimatedPositioned : animação da posição dos child
+- [x] AnimatedSize : tamanho animado
+- [ ] 
