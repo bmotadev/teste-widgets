@@ -52,6 +52,20 @@ class MyStatelessWidget extends StatelessWidget {
         SizedBox(
           width: 100.0,
           height: 200.0,
+          child: Align(
+            alignment: Alignment(2.0, 1.0),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red.shade200,
+              ),
+              onPressed: () {},
+              child: null,
+            ),
+          ),
+        ),
+        SizedBox(
+          width: 100.0,
+          height: 200.0,
           child: AbsorbPointer(
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
