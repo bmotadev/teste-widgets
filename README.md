@@ -23,3 +23,4 @@ samples, guidance on mobile development, and a full API reference.
 - [x] AbsordPointer() : basicamente faz com que o item de uma subarvore não receba cliques. Impede que receba eventos em elementos na subarvore(que vem depois de outros elementos)
 - [x] AlertDialog() : exibe uma caixa de dialogo
 - [x] Align() : alinha um widget child dentro de si e pode mudar de tamanho de acordo com tamanho do child
+- [x] AnimatedAlign : alinhamento animado dos child
