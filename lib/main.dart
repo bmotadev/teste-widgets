@@ -1,53 +1,33 @@
-// import 'package:flutter/material.dart';
+import 'dart:js';
 
-// void main(List<String> args) {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       home: HomePageWidget(),
-//     );
-//   }
-// }
-
-// class HomePageWidget extends StatelessWidget {
-//   const HomePageWidget({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Icon(Icons.car_rental),
-//       ),
-//       body: const Center(
-//         child: Text('Bruno Mota'),
-//       ),
-//     );
-//   }
-// }
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main(List<String> args) {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  static const String _title = 'Flutter Code Sample';
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: HomePageWidget(),
+    );
+  }
+}
+
+class HomePageWidget extends StatelessWidget {
+  const HomePageWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
-        body: const Center(
-          child: MyStatelessWidget(),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Icon(Icons.car_rental),
+      ),
+      body: const Center(
+        child: MyStatelessWidget(),
       ),
     );
   }
@@ -82,7 +62,36 @@ class MyStatelessWidget extends StatelessWidget {
             ),
           ),
         ),
+        const DialogExample(),
       ],
+    );
+  }
+}
+
+class DialogExample extends StatelessWidget {
+  const DialogExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () => showDialog<String>(
+        context: context,
+        builder: (BuildContext context) => AlertDialog(
+          title: const Text('AlertDialog Title'),
+          content: const Text('AlertDialog description'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () => Navigator.pop(context, 'Cancel'),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, 'OK'),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      ),
+      child: const Text('Show Dialog'),
     );
   }
 }
