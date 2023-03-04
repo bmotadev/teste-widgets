@@ -35,4 +35,6 @@ samples, guidance on mobile development, and a full API reference.
 - [x] AnimatedPhysicalModel : anima a borderRadius e a elevation
 - [x] AnimatedPositioned : animação da posição dos child
 - [x] AnimatedSize : tamanho animado
+- [ ] AnimatedWidget :  permite criar a propria animação
+- [ ] AnimatedWidgetBaseState : usado em widget com animações implicitas
 - [ ] 
