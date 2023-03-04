@@ -1,20 +1,5 @@
 # teste_widgets
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
 ## Widgets Testados
 
 - [x] `Text()` : serve para colocar texto
@@ -93,7 +78,7 @@ samples, guidance on mobile development, and a full API reference.
 ---
 - [x] `ConstrainedBox()` : permiti restringir o tamanho maxinho do elemento(widget) filho(child)
 ---
-- [x] `Container()v : permiti ser customizado e colocando elementos, vai usar o tamanho do elemento como tamanho proprio
+- [x] `Container()` : permiti ser customizado e colocando elementos, vai usar o tamanho do elemento como tamanho proprio
 ---
 - [x] `CupertinoActionSheet` : uma folha de ação que alerta o usuario. Feito no estilo iOS.
 ---
@@ -186,4 +171,44 @@ samples, guidance on mobile development, and a full API reference.
 - [x] `ExcludeSemantics()` : descarta toda a semântica de seus descendentes
 ---
 - [x] `Expanded()` : faz o widget se expandir para o espaço vazio em volta dele
+---
+- [x] `ExpansionPanel()` : painel que pode ser expandido ou recolhido, permiti sua customização
+---
+- [x] `FadeTransition()` : anima a opacidade de um Widget
+---
+- [x] `FittedBox()` : dimensiona e ajusta os widget dentro dele(childs)
+---
+- [x] `FloatingActionButton()` : botão de ação flutuante
+---
+- [x] `Flow()` : dimensiona e posiciona os filhos(childs) de acordo com a lógica do FlowDelegate.
+---
+- [x] `FlutterLogo()` : logo do flutter
+---
+- [x] `Form()` : container para agrupar itens de fomulario FormField()
+---
+- [x] `FormField()` : campo de formulario
+---
+- [x] `FractionalTranslation()` : aplica transformação de translação
+---
+- [x] `FractionallySizedBox()` : dimensiona o widget filho(child) para uma fração da dimensão total
+---
+- [x] `FutureBuilder()` : permite determinar o estado atual de um Future, e escolher o que mostrar enquanto os dados são carregados e quando se torna disponivel
+---
+- [x] `GestureDetector()` : detecta gestos. Toques na tela
+---
+- [x] `GridView()` : cria uma matriz rolavel(scroll). Permiti customização
+---
+- [x] `Hero()` : permite o elemento(widget) filho(child) a ter animação de herói
+---
+- [x] `Icon()` : icones com Material Design
+---
+- [x] `IconButton()` : icones botões reagem ao toque e tem cor
+---
+- [x] `IgnorePointer()` : widget fica invisivel durante o teste de clique. Evitando que o usuario clique onde não deseja.
+---
+- [x] `Image()` : exibe uma imagem
+---
+- [x] `IndexedStack()` : Passa facilmente de um widget para outro
+---
+- [x] `InteractiveViewer()` : permite da zoom em um widget(imagem) deixando o mesmo no tamanho total.
 ---
