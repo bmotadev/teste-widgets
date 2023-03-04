@@ -57,4 +57,29 @@ samples, guidance on mobile development, and a full API reference.
 - [x] ConstrainedBox() : permiti restringir o tamanho maxinho do elemento(widget) filho(child)
 - [x] Container() : permiti ser customizado e colocando elementos, vai usar o tamanho do elemento como tamanho proprio
 - [x] CupertinoActionSheet : uma folha de ação que alerta o usuario. Feito no estilo iOS.
-- [ ] 
+- [x] CupertinoActivityIndicator() : carregamento de tela (iOS)
+- [x] CupertinoAlertDialog() : alerta popup na tela (iOS) com MaterialApp() tem opções adicionais
+- [x] CupertinoButton() : botão no estilo iOS
+- [x] CupertinoContextMenu() : exibe menu apos manter pressionado um botão
+- [x] CupertinoDatePicker() : seletor de data no estilo iOS
+- [x] CupertinoDialogAction() : botão geralmente usado no CupertinoAlertDialog
+- [x] CupertinoFullscreenDialogTransition() : transição no estilo IOS, que invoca dialos em tela cheia.
+- [x] CupertinoListSection() : cria uma lista estilo iOS
+- [x] CupertinoListTile() : cria um bloco de uma lista
+- [x] CupertinoNavigationBar() : barra de navegação no estilo iOS
+- [x] CupertinoPageScaffold() : layout de uma unica pagina de app iOS
+- [x] CupertinoPageTransition() : transição de pagina no estilo iOS
+- [x] CupertinoPicker() : seletor no estilo iOS
+- [x] CupertinoPopupSurface() : cria um popup retangular no estilo iOS
+- [x] CupertinoScrollbar() : barra de rolagem no estilo iOS
+- [x] CupertinoSearchTextField() : campo de busca estilo iOS
+- [x] CupertinoSegmentedControl() : um controle segmentado estilo iOS
+- [x] CupertinoSilder() : seleção de valores em uma linha
+- [x] CupertinoSlidingSegmentedControl() : controle segmentado
+- [x] CupertinoSilverNavigationBar() : barra de navegação estilo iOS
+- [x] CupertinoSwitch() : um switch pra colocar como on/off estilo iOS
+- [x] CupertinoTabBar() : uma barra com guias de navegação
+- [x] CupertinoTabScaffold() : layout e estrutura estilo iOS
+- [x] CupertinoTabView() : guia unica com proprio estado e historico do navegador
+- [x] CupertinoTextField() : campo de texto estilo iOS
+- [x] CupertinoTimerPicker() : cronometro estilo iOS
