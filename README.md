@@ -212,3 +212,21 @@
 ---
 - [x] `InteractiveViewer()` : permite da zoom em um widget(imagem) deixando o mesmo no tamanho total.
 ---
+- [x] `IntrinsicHeight()` : propriedades de altura
+---
+- [x] `IntrinsicWidth()` : propriedades de largura
+---
+- [x] `LayoutBuilder()` : constroi uma arvore de widgets
+---
+- [x] `LimitedBox()` : caixa que limita seu tamanho somente quando não tem restrições
+---
+- [x] `LinearProgressIndicator()` : barra de carregamento/progresso
+---
+- [x] `ListBody()` : organiza childs sequencialmente
+---
+- [x] `ListTile()` : uma unica linha que normalmente contem texto e um icone
+---
+- [x] `ListView()` : lista com rolamento - personalizavel
+---
+- [x] `LongPressDraggable` : torna o widget(elemento) child arrastavel depois de manter pressionado por um longo periodo
+---
