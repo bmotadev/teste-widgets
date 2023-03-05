@@ -268,4 +268,63 @@
 ---
 - [x] `ReorderableListView()` : lista que o proprio usuario pode reordenar os itens
 ---
-- [x] ``
+- [x] `RichText()` : um paragrafo com diferentes estilos de texto
+---
+- [x] `RotatedBox()` : gira o widget e adapta o tamanho dele
+---
+- [x] `RotationTransition()` : rotaciona a transição do widget(elemento)
+---
+- [x] `Row()` : linha horizontal, pode se organizar outros widgets na linha
+---
+- [x] `ScaleTransition()` : animação da escala de um widget transformado
+---
+- [x] `ScrollConfiguration()` : controla widgets que tem rolamento(scrollaveis) na subarvore
+---
+- [x] `Scrollable()` : um widget que tem rolamento
+---
+- [x] `Scrollbar()` : barra de rolagem
+---
+- [x] `Semantics()` : semantica para a arvore de widgets
+---
+- [x] `SimpleDialog()` : caixa de dialogo simples
+---
+- [x] `SingleChildScrollView()` : uma caixa onde um unico widget tem rolamento
+---
+- [x] `SizeTranstion()` : anima o proprio tamanho do widget
+---
+- [x] `SizedBox()` : uma caixa com tamanho especifico
+---
+- [x] `SizedOverflowBox()` : um widget que sobrepoem os child
+---
+- [x] `SlideTransition()` : animação de slide para o widget
+---
+- [x] `Slider()` : seleciona um intervalo de valores. Ex: volume ou quantidade de items em uma lista
+---
+- [x] `SliverAppBar()` : uma barra de aplicativos que se integra com CustomScrollView
+---
+- [x] `SliverChildBuilderDelegate()` : fornece child usando retorno de chamada do constructor.
+---
+- [x] `SliverChildListDelegate()` :  fornece slivers usando lista explicita
+---
+- [x] `SliverFixedExtentList()` : Vários child da caixa com a mesma extensão do eixo principal em uma matriz linear
+---
+- [x] `SliverGrid()` : Sliver é uma area de rolagem que fica dentro de uma view personalizada. Podem aidicionar novos itens lentamente conforme aparecem
+---
+- [x] `SliverList()` : sliver que coloca varios child em uma matriz linear
+---
+- [x] `SliverPadding()` : aplica preenchimento em cada lado de outro sliver
+---
+- [x] `SliverPersistentHeader()` : sliver cujo tamanho varia quando o sliver é rolado para a borda da janela de visualização oposta ao GrowthDirection do sliver.
+---
+- [x] `SliverToBoxAdaptar()` : sliver que contem um unico widget de caixa
+---
+- [x] `SnackBar()` : uma mensagem exibida quando ocorre alguma ação
+---
+- [x] `Stack()` : posiciona seus child em relação a borda da caixa// sobrepoem ou empilha
+---
+- [x] `Stepper()` : exibe passos a serem seguidos
+---
+- [x] `StreamBuilder()` : se constroi com base na interação mais recente
+---
+- [x] `Switch()` : botão de interruptor
+---
