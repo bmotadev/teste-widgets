@@ -228,5 +228,44 @@
 ---
 - [x] `ListView()` : lista com rolamento - personalizavel
 ---
-- [x] `LongPressDraggable` : torna o widget(elemento) child arrastavel depois de manter pressionado por um longo periodo
+- [x] `LongPressDraggable()` : torna o widget(elemento) child arrastavel depois de manter pressionado por um longo periodo
 ---
+- [x] `MediaQuery()` : widget para responsividade
+---
+- [x] `MergeSemantics()` : ??? semantica
+---
+- [x] `Navigator()` : gerencia um conjunto de widgets
+---
+- [x] `NestedScrollView()` : uma barra de rolagem dentro de outra barra de rolagem (scroll)
+---
+- [x] `NotificationListener()` : escuta notificações dos widgets na arvore
+---
+- [x] `Offstage()` : esconde widget child(filho)
+---
+- [x] `Opacity()` : opacidade
+---
+- [x] `OutlinedButton()` : basicamente um TextButton com a borda contornada
+---
+- [x] `OverflowBox()` : pode ter restrições diferentes
+---
+- [x] `Padding()` : espaçamento
+---
+- [x] `PageView()` : lista rolável
+---
+- [x] `Placeholder()` : desenha uma caixa para onde os outros widgets irão aparecer
+---
+- [x] `PopupMenuButton()` : menu popup
+---
+- [x] `PositionedTransition()` : animação de transição de posição
+---
+- [x] `Radio()` : radio button
+---
+- [x] `RawImage()` : exibe um dart:ui.image diretamente
+---
+- [x] `RawKeyboardListener()` : chama um retorno de chamada sempre que é pressionada ou solta uma tecla no teclado.
+---
+- [x] `RefreshIndicator()` :  indica que uma lista está sendo atualizada
+---
+- [x] `ReorderableListView()` : lista que o proprio usuario pode reordenar os itens
+---
+- [x] ``
