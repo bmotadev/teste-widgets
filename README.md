@@ -328,3 +328,28 @@
 ---
 - [x] `Switch()` : botão de interruptor
 ---
+- [x] `TabBar()` : guia com abas
+---
+- [x] `TabBarView()` : exibe o widget de acordo com a aba selecionada
+---
+- [x] `TabController()` : faz o controle das abas
+---
+- [x] `TabPageSelector()` : mostra onde você esta na lista
+---
+- [x] `Table()` : cria uma tabela
+---
+- [x] `Text()` : texto com unico estilo
+---
+- [x] `TextButton()` : um texto de botão
+---
+- [x] `TextField()` : campo de texto
+---
+- [x] `Theme()` : aplica um tema para os widgets descendentes. Um tema descreve cores e opções tipográficas de um app
+---
+- [x] `Tooltip()` : mostra um texto sobre determinada imagem. Um texto de dica sobre o que aquele elemento faz
+---
+- [x] `Transform()` : transforma os widgets. Podendo girar na tela, rotacionar entre outros.
+---
+- [x] `WidgetsApp()` : agrupa varios widgets necessario para um app
+---
+- [x] `Wrap()` : se não há espaço na linha ele coloco o proximo elemento para baixo
